@@ -153,3 +153,33 @@ body > section {
   clear: both;
   padding: 1em;
 }
+
+
+/*   T A B L E T   V E R S I O N   */
+@media (min-width: 768px) and (max-width: 1024px) {
+  body {
+    /*background-color: blue;*/
+  }
+  .half, .third {
+    width: 99%;
+    margin: 0.5%;
+  }
+  .fourth {
+    width: 49%;
+    margin: 0.5%;
+  }
+  .notForTablet {
+    display: none;
+  }
+}
+
+/*   M O B I L E   V E R S I O N   */
+@media only screen and (max-width: 767px) {
+  .half, .third, .fourth {
+    width: 99%;
+    margin: 0.5%;
+  }
+  .notForTablet, .notForMobile {
+    display: none;
+  }
+}
