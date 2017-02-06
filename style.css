@@ -1,0 +1,155 @@
+* {
+      -moz-box-sizing: border-box; /* Firexfox */
+      -webkit-box-sizing: border-box; /* Safari/Chrome/iOS/Android */
+      box-sizing: border-box; /* IE */
+}
+body {
+  margin: 0;
+  font-family: arial;
+}
+header, section, footer, article {
+  /*
+  height: 10em;
+  border: 1px solid black;
+  */
+}
+article {
+  padding: 1em;
+}
+a {
+  text-decoration: inherit;
+  color: inherit;
+  margin: 0;
+  padding: 0;
+}
+body > header {
+  background-color: black;
+}
+body > header ul {
+  margin: 0;
+  padding: 0;
+}
+body > header a {
+  /* TODO: find a way to make these anchos the same size as parents */
+}
+body > header img {
+  height: 100%;
+  height: 2.2em;
+}
+body > header li {
+  display: inline-block;
+  color: white;
+  vertical-align: middle;
+  line-height: 0em;
+
+}
+body> header li + li {
+  line-height: 1.5em;
+  padding: 0.6em;
+
+  border-left: 1px solid gray;
+}
+body> header li:nth-last-child(1) {
+  float: right;
+  padding-right: 0;
+}
+section section, article {
+  float: left;
+}
+body > section {
+  /*clear: both;*/
+}
+
+
+
+.half, .fourth, .third {
+  /*
+  margin-left: 1em;
+  margin-bottom: 1em;
+  */
+}
+.half {
+  clear: both;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+  min-height: 19.5em; /*20em*/
+  width: 50%;
+  background-color: blue;
+}
+.fourth {
+  margin-top: 0.5em;
+  margin-left: 0.5em;
+  min-height: 9.5em; /*20em*/
+  width: calc( 25% - 0.5em);
+}
+.fourth div {
+  font-size: 0.71em;
+}
+.half, .fourth {
+
+  background-image: url(1.jpg);
+  background-position: center;
+  background-size: cover;
+  color: white;
+
+  position: relative;
+
+}
+
+.bak5  {background: linear-gradient( rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 1) ), url('5.jpg');}
+.bak6  {background: linear-gradient( rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 1) ), url('6.jpg');}
+.bak7  {background: linear-gradient( rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 1) ), url('7.jpg');}
+.bak8  {background: linear-gradient( rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 1) ), url('8.jpg');}
+.bak9  {background: linear-gradient( rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 1) ), url('9.jpg');}
+.bak10 {background: linear-gradient( rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 1) ), url('10.jpg');}
+
+.half div, .fourth div {
+  position: absolute;
+  bottom: 0;
+}
+.third {
+  margin-top: 0.5em;
+  height: 16em;
+  width: calc( 33.3333% - 0.3333em );
+
+}
+.third + .third {
+  margin-left: 0.5em;
+}
+.third img {
+  display: block;
+  width: 100%;
+  height: 16em;
+}
+
+.clearLine {
+  clear: both;
+  margin: 0;
+  padding: 0;
+}
+
+#mainArticles {
+  background-color: #eee;
+}
+#mainArticles h1 {
+  float: left;
+}
+#mainArticles h3 {
+  float: right;
+}
+#mainArticles h1, #mainArticles h3 {
+  font-size: 1em;
+  font-weight: normal;
+  padding: 0;
+  margin: 0;
+}
+#iNews h1 {
+  margin: 0;
+}
+body > header {
+  padding: 0 1em;
+}
+body > section {
+  clear: both;
+  padding: 1em;
+}
